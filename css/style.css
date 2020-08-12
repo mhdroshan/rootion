@@ -131,6 +131,7 @@ nav {
 
 .jumbrot {
     margin-left: 12vw;
+    margin-top: 85px;
 }
 
 .jumbrot p {
@@ -145,12 +146,18 @@ nav {
 
 .hireme {
     border: 1px solid #e8cb00;
-    padding: 12px 35px;
-    width: fit-content;
+    padding: 10px 30px;
+    width: 140px;
+    text-align: center;
+    border-radius: 50px;
+    position: absolute;
     color: black;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .jumbrot a:hover {
     text-decoration: none;
+}
+.jumbrot a{
+    width: 140px;
 }
