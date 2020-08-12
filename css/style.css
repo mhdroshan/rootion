@@ -1,0 +1,156 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.homeview {
+    background-color: #dbdbdb;
+    height: 100vh;
+}
+
+.profimage {
+    background-image: url(../src/prof31.jpg), radial-gradient(circle, #dbdbdb 0%, #dbdbdb 100%);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    height: 100vh;
+}
+
+.proalign {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.collapse {
+    justify-content: flex-end;
+}
+
+nav {
+    z-index: 10;
+    text-align: center;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+.navbar-brand{
+    transition: 0.s ease;
+    font-weight: 700;
+}
+.navbar-brand:hover {
+    /* -webkit-text-stroke: 1px #343a40; */
+    color: #dbdbdb  !important;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+/* .navbar .show{
+    background-color: black;
+} */
+
+/* hambur */
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #000;
+    stroke-width: 4;
+    stroke-linecap: round;
+}
+
+.ham7 .top {
+    stroke-dasharray: 40 82;
+}
+
+.ham7 .middle {
+    stroke-dasharray: 40 111;
+}
+
+.ham7 .bottom {
+    stroke-dasharray: 40 161;
+}
+
+.ham7.active .top {
+    stroke-dasharray: 17 82;
+    stroke-dashoffset: -62px;
+}
+
+.ham7.active .middle {
+    stroke-dashoffset: 23px;
+}
+
+.ham7.active .bottom {
+    stroke-dashoffset: -83px;
+}
+
+.navbar button {
+    border: none;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.navbar button:focus {
+    outline: none;
+}
+
+.navbar-brand {
+    margin-top: 1vh;
+    margin-left: 1vw;
+}
+
+.nav-item {
+    margin: auto 25px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* jumbrotron */
+
+.jumbrot {
+    margin-left: 12vw;
+}
+
+.jumbrot p {
+    margin: 0;
+}
+
+.jumbrot h1 {
+    font-weight: 900;
+    font-size: 53px;
+    color: #e8cb00;
+}
+
+.hireme {
+    border: 1px solid #e8cb00;
+    padding: 12px 35px;
+    width: fit-content;
+    color: black;
+    font-size: 15px;
+}
+
+.jumbrot a:hover {
+    text-decoration: none;
+}
