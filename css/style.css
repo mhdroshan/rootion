@@ -2,6 +2,38 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* media  quries*/
+@media only screen and (min-width: 992px) {
+    .navbar .show{
+        background-color: transparent !important;
+    }
+    
+}
+
+@media only screen and (max-width: 544px) {
+    .jumbrot h1{
+        font-size: 46px !important;
+    }
+    .jumbrot h5{
+        font-size: 18px;
+    }
+    
+}
+@media only screen and (max-width: 442px) {
+    .jumbrot p{
+    color: white!important;
+    }
+    
+}
+
+@media only screen and (max-width: 992px) {
+.navbar .show .nav-link{
+    color: black !important;
+    transition: 0.3s ease;
+
+}
+}
+
 .homeview {
     background-color: #dbdbdb;
     height: 100vh;
@@ -46,9 +78,43 @@ nav {
     text-shadow: 2px 2px 5px #000000;
 }
 
-/* .navbar .show{
-    background-color: black;
-} */
+.navbar .show{
+    background-color: #e8cb00c7;
+    color: white !important;
+    border-radius: 9px;
+    transition: 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.nav-link{
+    color: black !important;
+}
+.colorwhite{
+    color: white !important;
+}
+
+.navbar button {
+    border: none;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.navbar button:focus {
+    outline: none;
+}
+
+.navbar-brand {
+    margin-top: 1vh;
+    margin-left: 1.5vw;
+}
+
+.nav-item {
+    margin: 8px 30px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
 
 /* hambur */
 
@@ -103,35 +169,12 @@ nav {
     stroke-dashoffset: -83px;
 }
 
-.navbar button {
-    border: none;
-    height: 60px;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.navbar button:focus {
-    outline: none;
-}
-
-.navbar-brand {
-    margin-top: 1vh;
-    margin-left: 1vw;
-}
-
-.nav-item {
-    margin: auto 25px;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
 
 /* jumbrotron */
 
 .jumbrot {
     margin-left: 12vw;
-    margin-top: 85px;
+    margin-top: 160px;
 }
 
 .jumbrot p {
@@ -140,7 +183,7 @@ nav {
 
 .jumbrot h1 {
     font-weight: 900;
-    font-size: 53px;
+    font-size: 75px;
     color: #e8cb00;
 }
 
@@ -151,10 +194,19 @@ nav {
     text-align: center;
     border-radius: 50px;
     position: absolute;
-    color: black;
+    color: white;
+    margin-top: 10px;
     font-size: 14px;
+    background: #e8cb00;
+    transition: 0.3s ease;
 }
-
+.hireme:focus{
+    outline: none;
+}
+.hireme:hover{
+    background: transparent;
+    color: black;
+}
 .jumbrot a:hover {
     text-decoration: none;
 }
