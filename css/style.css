@@ -8,6 +8,7 @@ body {
         background-color: transparent !important;
     }
     
+    
 }
 
 @media only screen and (max-width: 544px) {
@@ -32,11 +33,15 @@ body {
     transition: 0.3s ease;
 
 }
+.profimage{
+    background-attachment: fixed !important;
+}
 }
 
 .homeview {
     background-color: #dbdbdb;
     height: 100vh;
+    
 }
 
 .profimage {
@@ -45,6 +50,7 @@ body {
     background-repeat: no-repeat;
     background-position: right;
     width: 100%;
+    background-attachment: scroll;
     height: 100vh;
 }
 
