@@ -9,7 +9,7 @@
   <!-- bootstrap and other css  -->
   <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
-  
+
 
   <!-- googlefont -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700;800;900&display=swap"
@@ -38,16 +38,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link "  href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link colorwhite"  href="#">Projects</a>
+            <a class="nav-link colorwhite" href="#">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled"  href="#">Contact</a>
+            <a class="nav-link disabled" href="#">Contact</a>
           </li>
         </ul>
       </div>
@@ -56,7 +56,7 @@
 
     <div class="row h-100">
       <div class="col-lg-6 my-auto" style="z-index: 2;">
-        <div class="jumbrot">
+        <div class="jumbrot" data-paroller-factor="0.2" data-paroller-type="foreground" data-paroller-direction="horizontal">
           <p>Hello!</p>
           <h1>I'm Roshan</h1>
           <h5>Freelance web Designer</h5>
@@ -78,83 +78,49 @@
   </div>
 
 
-
-
-
-
-
-
-
-<br>
-<div class="container-fluid homeviewj">
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">ro_otion</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
-        <path class="line top" d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
-        <path class="line middle" d="m 70,50 h -40" />
-        <path class="line bottom"
-          d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
-      </svg>
-    </button>
-    <!-- hamburger -->
-
-
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link "  href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link colorwhite"  href="#">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled"  href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-
-  <div class="row h-100">
-    <div class="col-lg-6 my-auto" style="z-index: 2;">
-      <div class="jumbrot">
-        <p>Hello!</p>
-        <h1>I'm Roshan</h1>
-        <h5>Freelance web Designer</h5>
-        <h5>& Developer</h5>
-
-        <a href="http://google.com">
-          <div class="hireme">HIRE ME</div>
-        </a>
-
+  <!-- About me -->
+  <div class="bgblack">
+  <div class="container">
+    <div class="aboutme">
+      <div class="abthead">About me</div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="abtdata">
+            <p>Since beginning my journey as a freelance designer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="perdp"></div>
+        </div>
+        <div class="col-sm-4">
+          <div class="abtdata">
+            <p>Since beginning my journey as a freelance designer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
+          </div>
+        </div>
       </div>
-
-
-    </div>
-    <div class="col-lg-6 my-auto proalign">
-      <div class="profimage"></div>
-
+      
     </div>
   </div>
+
 </div>
 
 
 
 
-
-
   <!-- javascript -->
+
+
   
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
   <script src="./bootstrap/js/bootstrap.min.js"></script>
-  <script src="./js/jquery.min.js"></script>
+  <!-- <script src="./js/jquery.min.js"></script> -->
+  <script src="./js/jquery.paroller.js"></script>
+  <!--  data-paroller-factor="0.5" data-paroller-type="foreground"  -->
+  
+  <script>
+    $('.jumbrot').paroller();
+    
+  </script>
 </body>
 
 </html>

@@ -20,22 +20,26 @@ body {
     }
     
 }
-@media only screen and (max-width: 442px) {
+/* @media only screen and (max-width: 442px) {
     .jumbrot p{
     color: white!important;
     }
     
-}
+} */
 
 @media only screen and (max-width: 992px) {
 .navbar .show .nav-link{
     color: black !important;
     transition: 0.3s ease;
+    
 
 }
-.profimage{
-    background-attachment: fixed !important;
+.nav-link{
+    padding: 0px !important;
 }
+/* .profimage{
+    background-attachment: fixed !important;
+} */
 }
 
 .homeview {
@@ -50,7 +54,7 @@ body {
     background-repeat: no-repeat;
     background-position: right;
     width: 100%;
-    background-attachment: scroll;
+    background-attachment: fixed;
     height: 100vh;
 }
 
@@ -61,7 +65,7 @@ body {
 }
 
 .collapse {
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 nav {
@@ -92,6 +96,7 @@ nav {
 }
 .nav-link{
     color: black !important;
+    padding: 25px 10px;
 }
 .colorwhite{
     color: white !important;
@@ -218,4 +223,39 @@ nav {
 }
 .jumbrot a{
     width: 140px;
+}
+
+/* about me */
+.aboutme{
+  padding: 20px;  
+    
+}
+.abthead{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    margin: auto;
+    padding: 30px 10px;
+    color: white;
+
+}
+.abtdata{
+text-align: center;
+}
+
+.perdp{
+    background-image: url(../src/prof1.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 70%;
+    background-size: 77%;
+    background-position: top;
+    margin: auto;
+}
+.bgblack{
+    background: black;
+    color: #bfbfbf;
+    margin: auto;
+    margin-bottom: 400px;
+    
 }
