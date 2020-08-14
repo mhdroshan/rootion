@@ -3,23 +3,22 @@ body {
 }
 
 /* media  quries*/
+
 @media only screen and (min-width: 992px) {
-    .navbar .show{
+    .navbar .show {
         background-color: transparent !important;
     }
-    
-    
 }
 
 @media only screen and (max-width: 544px) {
-    .jumbrot h1{
+    .jumbrot h1 {
         font-size: 46px !important;
     }
-    .jumbrot h5{
+    .jumbrot h5 {
         font-size: 18px;
     }
-    
 }
+
 /* @media only screen and (max-width: 442px) {
     .jumbrot p{
     color: white!important;
@@ -28,16 +27,14 @@ body {
 } */
 
 @media only screen and (max-width: 992px) {
-.navbar .show .nav-link{
-    color: black !important;
-    transition: 0.3s ease;
-    
-
-}
-.nav-link{
-    padding: 0px !important;
-}
-/* .profimage{
+    .navbar .show .nav-link {
+        color: black !important;
+        transition: 0.3s ease;
+    }
+    .nav-link {
+        padding: 0px !important;
+    }
+    /* .profimage{
     background-attachment: fixed !important;
 } */
 }
@@ -45,7 +42,6 @@ body {
 .homeview {
     background-color: #dbdbdb;
     height: 100vh;
-    
 }
 
 .profimage {
@@ -78,27 +74,31 @@ nav {
     width: 100%;
     left: 0;
 }
-.navbar-brand{
+
+.navbar-brand {
     transition: 0.s ease;
     font-weight: 700;
 }
+
 .navbar-brand:hover {
     /* -webkit-text-stroke: 1px #343a40; */
-    color: #dbdbdb  !important;
+    color: #dbdbdb !important;
     text-shadow: 2px 2px 5px #000000;
 }
 
-.navbar .show{
+.navbar .show {
     background-color: #e8cb00c7;
     color: white !important;
     border-radius: 9px;
     transition: 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
-.nav-link{
+
+.nav-link {
     color: black !important;
     padding: 25px 10px;
 }
-.colorwhite{
+
+.colorwhite {
     color: white !important;
 }
 
@@ -125,7 +125,6 @@ nav {
     font-size: 14px;
     letter-spacing: 1px;
 }
-
 
 /* hambur */
 
@@ -180,7 +179,6 @@ nav {
     stroke-dashoffset: -83px;
 }
 
-
 /* jumbrotron */
 
 .jumbrot {
@@ -211,39 +209,44 @@ nav {
     background: #e8cb00;
     transition: 0.3s ease;
 }
-.hireme:focus{
+
+.hireme:focus {
     outline: none;
 }
-.hireme:hover{
+
+.hireme:hover {
     background: transparent;
     color: black;
 }
+
 .jumbrot a:hover {
     text-decoration: none;
 }
-.jumbrot a{
+
+.jumbrot a {
     width: 140px;
 }
 
 /* about me */
-.aboutme{
-  padding: 20px;  
-    
+
+.aboutme {
+    padding: 20px;
 }
-.abthead{
+
+.abthead {
     text-align: center;
     font-size: 50px;
     font-weight: 800;
     margin: auto;
     padding: 30px 10px;
     color: white;
-
-}
-.abtdata{
-text-align: center;
 }
 
-.perdp{
+.abtdata {
+    text-align: center;
+}
+
+.perdp {
     background-image: url(../src/prof1.jpg);
     width: 200px;
     height: 200px;
@@ -252,10 +255,22 @@ text-align: center;
     background-position: top;
     margin: auto;
 }
-.bgblack{
+
+.bgblack {
     background: black;
     color: #bfbfbf;
     margin: auto;
     margin-bottom: 400px;
-    
+}
+
+.svgpro {
+    width: 70px;
+}
+
+.bgblack svg {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    margin-top: -192px;
+    transform: scaleX(-1);
 }
