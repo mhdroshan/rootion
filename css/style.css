@@ -270,7 +270,7 @@ nav {
 .bgblack svg {
     position: absolute;
     width: 100%;
-    height: 300px;
-    margin-top: -192px;
+    height: 200px;
+    margin-top: -128px;
     transform: scaleX(-1);
 }
