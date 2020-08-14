@@ -196,8 +196,8 @@ nav {
 
 .hireme {
     border: 1px solid #e8cb00;
-    padding: 10px 30px;
-    width: 140px;
+    padding: 10px 25px;
+    /* width: 140px; */
     text-align: center;
     border-radius: 50px;
     position: absolute;
@@ -216,7 +216,26 @@ nav {
     background: transparent;
     color: black;
 }
-
+.cvdown{
+    border: 1px solid #e8cb00;
+    padding: 10px 25px;
+    width: 150px;
+    text-align: center;
+    margin: 7px auto;
+    cursor: pointer;
+    border-radius: 50px;
+    color: white;
+    font-size: 14px;
+    background: #e8cb00;
+    transition: 0.3s ease;
+}
+.cvdown:hover{
+    background: transparent;
+    color: white;
+}
+.cvdown:focus{
+    outline: none;
+}
 .jumbrot a:hover {
     text-decoration: none;
 }
