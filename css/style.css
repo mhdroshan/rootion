@@ -19,6 +19,14 @@ body {
     }
 }
 
+
+@media only screen and (max-width: 700Px) {
+    .langtitle {
+        font-size: 13px !important;
+    }
+    
+}
+
 /* @media only screen and (max-width: 442px) {
     .jumbrot p{
     color: white!important;
@@ -284,7 +292,7 @@ nav {
     width: 70px;
 }
 
-.bgblack svg {
+#svgchar {
     position: absolute;
     width: 200px;
     right: 50%;
@@ -292,4 +300,23 @@ nav {
     margin-right: -88px;
     margin-top: -119px;
     transform: scaleX(-1);
+}
+
+.langu{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    max-width: 80%;
+}
+.iconn svg{
+    width: 48px;
+    height: 70px;
+}
+.iconn{
+    width: 100%;
+    
+}
+.langtitle{
+    font-size: 17px;
 }
