@@ -235,7 +235,7 @@ nav {
     font-size: 50px;
     font-weight: 800;
     margin: auto;
-    padding: 30px 10px;
+    padding: 18px 10px 31px 10px;
     color: white;
 }
 
@@ -266,9 +266,10 @@ nav {
 
 .bgblack svg {
     position: absolute;
-    width: 309px;
-    /* left: 253px; */
+    width: 200px;
+    right: 50%;
     height: 188px;
-    margin-top: -116px;
-    /* transform: scaleX(-1); */
+    margin-right: -88px;
+    margin-top: -119px;
+    transform: scaleX(-1);
 }
