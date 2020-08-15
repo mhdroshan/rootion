@@ -19,12 +19,10 @@ body {
     }
 }
 
-
 @media only screen and (max-width: 700Px) {
     .langtitle {
         font-size: 13px !important;
     }
-    
 }
 
 /* @media only screen and (max-width: 442px) {
@@ -78,15 +76,24 @@ nav {
     text-align: center;
 }
 
+
 .navbar {
-    position: absolute;
+    position: fixed;
     width: 100%;
     left: 0;
+    top: 0;
+    padding: 5px 0px;
+    z-index: 20;
+    transition: 0.4s ease;
+    /* box-shadow: none; */
 }
 
 .navbar-brand {
-    transition: 0.s ease;
+    transition: 0.3s ease;
     font-weight: 700;
+    margin-top: 1vh;
+    margin-left: 5vw;
+    margin-bottom: 1vh;
 }
 
 .navbar-brand:hover {
@@ -96,17 +103,17 @@ nav {
 }
 
 .navbar .show {
-    background-color: #e8cb00c7;
+    background-color: #ffffffbd;
+    backdrop-filter: blur(4px);
     color: white !important;
-    border-radius: 9px;
-    transition: 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    border-radius: 0 0 10px 10px;
+    transition: background-color 0.2s ease-in,box-shadow 0.5s ease-in;
 }
 
 .nav-link {
     color: black !important;
     padding: 25px 10px;
 }
-
 
 .navbar button {
     border: none;
@@ -120,10 +127,6 @@ nav {
     outline: none;
 }
 
-.navbar-brand {
-    margin-top: 1vh;
-    margin-left: 1.5vw;
-}
 
 .nav-item {
     margin: 8px 30px;
@@ -224,7 +227,8 @@ nav {
     background: transparent;
     color: black;
 }
-.cvdown{
+
+.cvdown {
     border: 1px solid #e8cb00;
     padding: 10px 25px;
     width: 150px;
@@ -237,13 +241,16 @@ nav {
     background: #e8cb00;
     transition: 0.3s ease;
 }
-.cvdown:hover{
+
+.cvdown:hover {
     background: transparent;
     color: white;
 }
-.cvdown:focus{
+
+.cvdown:focus {
     outline: none;
 }
+
 .jumbrot a:hover {
     text-decoration: none;
 }
@@ -269,6 +276,18 @@ nav {
 
 .abtdata {
     text-align: center;
+}
+
+.detailsonme{
+    display: flex;
+    margin: 10px auto;
+}
+.detailsonme p{
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.boldd{
+    font-weight: 800;
 }
 
 .perdp {
@@ -302,21 +321,23 @@ nav {
     transform: scaleX(-1);
 }
 
-.langu{
+.langu {
     text-align: center;
     display: flex;
     justify-content: center;
     margin: 30px auto;
     max-width: 80%;
 }
-.iconn svg{
+
+.iconn svg {
     width: 48px;
     height: 70px;
 }
-.iconn{
+
+.iconn {
     width: 100%;
-    
 }
-.langtitle{
+
+.langtitle {
     font-size: 17px;
 }
