@@ -94,22 +94,24 @@ nav {
     font-weight: 700;
     margin-top: 1vh;
     width: 5vw;
+    font-size: 1.15rem;
     margin-left: 5vw;
     margin-bottom: 1vh;
 }
 
 .navbar-brand:hover > .ooclass{
     font-size: 25px;
-    margin-left: 3px;
-    LETTER-SPACING: 2px;
-    
+    margin-left: 3.5px;
+    LETTER-SPACING: 2.5px;
+    -webkit-text-stroke: .8px #000000;
     color: #ffffff !important;
     text-shadow: -2px 2px 2px #000000;
 }
 .ooclass{
     transition: 0.25s ease-in-out;
-    -webkit-text-stroke: .5px #000000;
+    
 }
+
 .navbar .show {
     /* background-color: #ffffffbd;
     backdrop-filter: blur(4px); */
