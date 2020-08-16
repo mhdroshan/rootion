@@ -16,13 +16,13 @@
     rel="stylesheet">
 </head>
 
-<body>
+<body >
 
   <div class="container-fluid homeview">
     <!-- navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#">ro_otion</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      <button onclick="myFunction()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
           <path class="line top" d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
@@ -37,10 +37,10 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li  class="nav-item active navitems">
+          <li class="nav-item active navitems">
             <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li  class="nav-item navitems">
+          <li class="nav-item navitems">
             <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item navitems">
@@ -285,8 +285,42 @@
   <script src="./js/jquery.paroller.js"></script>
   <!--  data-paroller-factor="0.5" data-paroller-type="foreground"  -->
 
+<script>
+   
+  
+function myFunction() {
+  var scl = $(window).scrollTop();
+  
+  if ($("#navbarNav").hasClass("show")) {
+    if(scl<300){
+        $("#navbar").css("background", "transparent");
+        $("#navbar").css("backdrop-filter", "none");
+        $("#navbar").css("box-shadow", "none");
+      }
+
+      }
+      else {
+        if(scl<300){
+        $("#navbar").css("background", "#ffffffbd");
+        $("#navbar").css("backdrop-filter", "blur(4px)");
+        $("#navbar").css("box-shadow", "rgba(0, 0, 0, 0.64) 0px 4px 6px 0px");
+      }
+    }
+}
+
+   
+</script>
+
+
   <script>
-  $(document).ready(function () {
+    $(document).ready(function () {
+
+      // if ($("#navbarNav").hasClass("show")) {
+      //   $("#navbar").css("background", "#ffffffbd");
+      //   $("#navbar").css("backdrop-filter", "blur(4px)");
+
+      // }
+     
       $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll > 300) {
@@ -294,14 +328,23 @@
           $("#navbar").css("background", "white");
           // $(".navbar .show").css("background", "white");
           $("#navbar").css("box-shadow", "rgba(0, 0, 0, 0.64) 0px 4px 6px 0px");
-          
+
         }
 
         else {
-          // document.getElementById("navbarNav").style.margin = "8px auto";
-          $("#navbar").css("background", "transparent");
-          $("#navbar").css("box-shadow", "none");
-          // $(".navbar .show").css("background", "#e8cb00c7");
+          if ($("#navbarNav").hasClass("show")) {
+            $("#navbar").css("background", "#ffffffbd");
+            $("#navbar").css("backdrop-filter", "blur(4px)");
+          
+          }
+          else {
+            // document.getElementById("navbarNav").style.margin = "8px auto";
+            $("#navbar").css("background", "transparent");
+            $("#navbar").css("box-shadow", "none");
+            $("#navbar").css("backdrop-filter", "none");
+
+            // $(".navbar .show").css("background", "#e8cb00c7");
+          }
         }
       })
     })</script>
