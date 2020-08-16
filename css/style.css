@@ -85,7 +85,7 @@ nav {
     padding: 5px 0px;
     z-index: 20;
     transition: 0.4s ease;
-    transition: background-color 0.2s ease-in,box-shadow 0.5s ease-in;
+    transition: background-color 0.2s ease-in,box-shadow 0.3s ease-in;
     /* box-shadow: none; */
 }
 
@@ -93,16 +93,23 @@ nav {
     transition: 0.3s ease;
     font-weight: 700;
     margin-top: 1vh;
+    width: 5vw;
     margin-left: 5vw;
     margin-bottom: 1vh;
 }
 
-.navbar-brand:hover {
-    /* -webkit-text-stroke: 1px #343a40; */
-    color: #dbdbdb !important;
-    text-shadow: 2px 2px 5px #000000;
+.navbar-brand:hover > .ooclass{
+    font-size: 25px;
+    margin-left: 3px;
+    LETTER-SPACING: 2px;
+    
+    color: #ffffff !important;
+    text-shadow: -2px 2px 2px #000000;
 }
-
+.ooclass{
+    transition: 0.25s ease-in-out;
+    -webkit-text-stroke: .5px #000000;
+}
 .navbar .show {
     /* background-color: #ffffffbd;
     backdrop-filter: blur(4px); */
