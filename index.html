@@ -55,7 +55,7 @@
 
 
     <div class="row h-100">
-      <div class="col-lg-6 my-auto" style="z-index: 2;padding: ;">
+      <div class="col-lg-6 my-auto" style="z-index: 6;">
         <div class="jumbrot">
           <p>Hello!</p>
           <h1>I'm Roshan</h1>
@@ -71,7 +71,13 @@
 
       </div>
       <div class="col-lg-6 my-auto proalign">
-        <div class="profimage"></div>
+        
+        <div id="portrait" class=" portrait">
+          <div class="fill cover-img"></div>
+      <div class="fill z-10 hover">
+         <div class="fill cover-img hover-img"></div>
+      </div>
+        </div>
 
       </div>
     </div>
@@ -164,7 +170,7 @@
 
     <div class="container">
       <div class="aboutme">
-        <div class="abthead">About me</div>
+        <div class="sechead">about me</div>
         <!-- <div class="topdetail">What I am</div> -->
         <div class="row">
           <div class="col-sm-4">
@@ -276,6 +282,59 @@
 
   </div>
 
+  <!-- projects page -->
+  <div class="propage">
+    <div class="sechead">my works</div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <figure class="snip1321"><div class="imghold" style="background-image: url(./src/ayurrekha.jpg);"></div>
+            <figcaption><i class="ion-upload"></i>
+              <h4>Ayurrekha    </h4>
+              <h2>McKenzie</h2>
+            </figcaption><a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-sm-6">
+          <figure class="snip1321"><div class="imghold" style="background-image: url(./src/battrex.jpg);"></div>
+            <figcaption><i class="ion-upload"></i>
+              <h4>Batrex India    </h4>
+              <h2>McKenzie</h2>
+            </figcaption><a href="#"></a>
+          </figure>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <figure class="snip1321"><div class="imghold" style="background-image: url(./src//Civilsolver.jpg);"></div>
+            <figcaption><i class="ion-upload"></i>
+              <h4>Civil solver    </h4>
+              <h2>McKenzie</h2>
+            </figcaption><a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-sm-6">
+          <figure class="snip1321"><div class="imghold" style="background-image: url(./src/padmesh.jpg);"></div>
+            <figcaption><i class="ion-upload"></i>
+              <h4>Padmesh Digital </h4>
+              <h2>McKenzie</h2>
+            </figcaption><a href="#"></a>
+          </figure>
+        </div>
+      </div>
+    </div>
+    
+
+    
+   
+   
+
+   
+
+  </div>
+
 
 
 
@@ -287,6 +346,28 @@
   <!-- <script src="./js/jquery.min.js"></script> -->
   <script src="./js/jquery.paroller.js"></script>
   <!--  data-paroller-factor="0.5" data-paroller-type="foreground"  -->
+
+<script>
+  
+
+
+var root = document.getElementById('portrait');
+
+var mouse_monitor = function(e) {
+let x = e.clientX/innerWidth;
+let y = e.clientY/innerHeight;
+
+let move_x = (x>0.5) ? '-15px' : '15px';
+let move_y = (y>0.5) ? '-15px' : '15px';
+
+root.style.setProperty("--translate-x", move_x);
+root.style.setProperty("--translate-y", move_y);
+}
+
+root.addEventListener("mousemove", mouse_monitor);
+
+
+</script>
 
 <script>
    
