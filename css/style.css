@@ -15,7 +15,7 @@ body {
         font-size: 46px !important;
     }
     .jumbrot h5 {
-        font-size: 18px;
+        font-size: 16.5px;
     }
 }
 
@@ -389,7 +389,7 @@ nav {
     font-weight: 800;
     margin: auto;
     padding: 2vh 10px 7vh 10px;
-    color: white;
+    color: #d9ebfe;
 }
 
 .abtdata {
@@ -413,16 +413,18 @@ nav {
 .perdp {
     background-image: url(../src/profile.png);
     width: 200px;
+    position: relative;
     height: 200px;
     border-radius: 70%;
-    background-size: 77%;
+    background-size: cover;
     background-position: top;
     margin: auto;
 }
 
 .bgblack {
-    background-color: black;
+    background-color: #03101e;
     color: #bfbfbf;
+    position: relative;
     margin: auto;
 }
 
@@ -494,8 +496,8 @@ nav {
 .topdetail::before, .topdetail::after {
     display: inline-block;
     content: "";
-    border-top: 0.1rem solid white;
-    width: 10%;
+    border-top: 0.05rem solid white;
+    width: 9%;
     margin: 0 1rem;
     transform: translateY(-6px);
 }
@@ -605,3 +607,19 @@ figure.snip1321.hover:after {
     background-repeat: no-repeat;
 }
 
+
+
+/* svg try */
+
+#star-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -120px;
+    width: 240px;
+    height: 240px;
+    margin-top: -116px;
+  }
+
+
+ 
