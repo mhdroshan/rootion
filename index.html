@@ -59,7 +59,7 @@
 
 
     <div class="row h-100">
-      <div class="col-lg-6 my-auto" style="z-index: 6;padding: 0;">
+      <div class="col-lg-6 my-auto" style="z-index: 10;padding: 0;">
         <div class="jumbrot">
           <p>Hello!</p>
           <h1>I'm Roshan</h1>
@@ -186,7 +186,7 @@
 
         <!-- <div class="topdetail">What I am</div> -->
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-4" style="margin: 25px auto;">
             <div class="abtdata">
               <p>Since beginning my journey as a freelance designer nearly 10 years ago, I've done remote work for
                 agencies, consulted for startups, and collaborated with talented people to create digital products for
@@ -194,7 +194,7 @@
                 improving my chops one design problem at a time.</p>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4" style="margin: 25px auto;">
             <div class="perdp">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.6 107.6" id="star-svg">
                 <path fill="none" stroke="white" stroke-width="1.5" id="star-path"
@@ -205,7 +205,7 @@
           </div>
           <div class="col-sm-4 my-auto">
             <!-- <div class="topdetail">BIO</div> -->
-
+<div class="detailshold">
             <div class="detailsonme">
               <span class="boldd">Name:&nbsp;</span>
               <p>Mohammed Roshan M</p>
@@ -217,6 +217,7 @@
             <div class="detailsonme">
               <span class="boldd">Location:&nbsp;</span>
               <p>Nilambur, Kerala</p>
+            </div>
             </div>
           </div>
         </div>
@@ -459,7 +460,7 @@
       var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
 
       // Length to offset the dashes
-      var drawLength = pathLength * scrollPercentage * 6;
+      var drawLength = pathLength * scrollPercentage * 7;
 
       // Draw in reverse
       path.style.strokeDashoffset = pathLength - drawLength;

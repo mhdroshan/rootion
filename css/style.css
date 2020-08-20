@@ -351,7 +351,7 @@ nav {
     padding: 10px 25px;
     width: 150px;
     text-align: center;
-    margin: 26px auto;
+    margin: 15px auto;
     cursor: pointer;
     border-radius: 50px;
     color: white;
@@ -382,7 +382,9 @@ nav {
 .aboutme {
     padding: 20px;
 }
-
+.detailshold{
+    margin: 25px auto;
+}
 .sechead {
     text-align: center;
     font-size: 50px;
