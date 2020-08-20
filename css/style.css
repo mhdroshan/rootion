@@ -424,6 +424,8 @@ nav {
 .bgblack {
     background-color: #03101e;
     color: #bfbfbf;
+    padding-top: 20px;
+    padding-bottom: 20px;
     position: relative;
     margin: auto;
 }
@@ -505,6 +507,8 @@ nav {
 /* projects */
 
 .propage {
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #000000;
     background-image: linear-gradient(191deg, #000000 0%, #2c2b2bb3 96%);
     
@@ -622,4 +626,25 @@ figure.snip1321.hover:after {
   }
 
 
- 
+  /* contactpage */
+
+  .contactme{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #000000;
+    background-image: linear-gradient(191deg, #000000 0%, #2c2b2bb3 96%);
+    height: 80vh;
+  }
+ .iconheld{
+     display: inline;
+ }
+
+ .svg-icon{
+     padding: 1px;
+     margin: 15px 30px;
+ }
+ .iconheld a{
+     color: white;
+     display: inline-block;
+ }
+ .iconheld a:hover{outline: none;}
