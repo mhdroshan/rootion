@@ -471,7 +471,7 @@ nav {
     
 }
 .iconn:hover svg{
-    transform: scale(1.09);
+    transform: scale(1.07);
     transform-origin: center;
 }
 .iconn .langtitle {
