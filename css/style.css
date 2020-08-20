@@ -456,7 +456,10 @@ nav {
 
 .iconn svg {
     width: 50px;
+    padding: 1px;
     height: 50px;
+    transition: 0.3s ease-in-out;
+
 }
 
 .iconn {
@@ -465,8 +468,12 @@ nav {
 
 .iconn:hover path {
     fill: #e8cb00 !important;
+    
 }
-
+.iconn:hover svg{
+    transform: scale(1.09);
+    transform-origin: center;
+}
 .iconn .langtitle {
     transition: 0.3s ease-in-out;
     transform: translateY(-10px);
