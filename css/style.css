@@ -138,6 +138,7 @@ body {
     background-repeat: no-repeat;
     background-image: url(../src/prof31.jpg), radial-gradient(circle, #dbdbdb 0%, #dbdbdb 100%);
 }
+
 .proalign {
     position: absolute;
     top: 0;
@@ -181,6 +182,7 @@ nav {
     /* font-size: 25px; */
     /* margin:auto 3px; */
     transform: translateX(10.5px)scale(1.5);
+    transition-delay: .15s;
     /* transform: scale(1.4); */
     /* LETTER-SPACING: 2.5px; */
     -webkit-text-stroke: .8px #000000;
@@ -198,6 +200,7 @@ nav {
     transform: translateX(-11px)scale(1.5);
     /* transform: scale(1.4); */
     /* LETTER-SPACING: 2.5px; */
+    transition-delay: .15s;
     -webkit-text-stroke: .8px #000000;
     color: #ffffff !important;
     text-shadow: 0px 2.5px 3px #000000;
@@ -377,21 +380,28 @@ nav {
     width: 140px;
 }
 
+.wholesec {
+    background-color: #000000;
+    background-image: linear-gradient(191deg, #000000 0%, #2c2b2bb3 96%);
+}
+
 /* about me */
 
 .aboutme {
     padding: 20px;
 }
-.detailshold{
+
+.detailshold {
     margin: 25px auto;
 }
+
 .sechead {
     text-align: center;
     font-size: 50px;
     font-weight: 800;
     margin: auto;
     padding: 2vh 10px 7vh 10px;
-    color: #d9ebfe;
+    color: #ffffffbf;
 }
 
 .abtdata {
@@ -424,7 +434,7 @@ nav {
 }
 
 .bgblack {
-    background-color: #03101e;
+    /* background-color: #03101e; */
     color: #bfbfbf;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -459,7 +469,6 @@ nav {
     padding: 1px;
     height: 50px;
     transition: 0.3s ease-in-out;
-
 }
 
 .iconn {
@@ -468,12 +477,13 @@ nav {
 
 .iconn:hover path {
     fill: #e8cb00 !important;
-    
 }
-.iconn:hover svg{
+
+/* .iconn:hover svg{
     transform: scale(1.07);
     transform-origin: center;
-}
+} */
+
 .iconn .langtitle {
     transition: 0.3s ease-in-out;
     transform: translateY(-10px);
@@ -518,59 +528,64 @@ nav {
 .propage {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #000000;
-    background-image: linear-gradient(191deg, #000000 0%, #2c2b2bb3 96%);
-    
 }
 
 figure.snip1321 {
-  
-  position: relative;
-  overflow: hidden;
-  margin: 10px auto;
-  
-  width: 100%;
-  color: white;
-  text-align: center;
-  -webkit-perspective: 50em;
-  perspective: 50em;
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+    width: 100%;
+    color: white;
+    text-align: center;
+    -webkit-perspective: 50em;
+    perspective: 50em;
 }
+
 figure.snip1321 * {
-  -webkit-box-sizing: padding-box;
-  box-sizing: padding-box;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
+
 figure.snip1321 img {
-  max-width: 100%;
-  vertical-align: top;
+    max-width: 100%;
+    vertical-align: top;
 }
+
 figure.snip1321 figcaption {
-  top: 50%;
-  left: 20px;
-  right: 20px;
-  position: absolute;
-  opacity: 0;
-  z-index: 1;
-}
-figure.snip1321 h2,
-figure.snip1321 h4 {
-  margin: 0;
-}
-figure.snip1321 h2 {
-  font-weight: 600;
-}
-figure.snip1321 h4 {
-  font-weight: 400;
-  text-transform: uppercase;
-}
-figure.snip1321 i {
-  font-size: 32px;
-}
-figure.snip1321:after {
-    background-color: #000000c7;
+    top: 42%;
+    left: 20px;
+    right: 20px;
     position: absolute;
-    backdrop-filter: blur(4px);
+    transition: 0.3s ease-in-out;
+    opacity: 1;
+    z-index: 1;
+}
+
+figure.snip1321 h2, figure.snip1321 h4 {
+    margin: 0;
+}
+
+figure.snip1321 h2 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+figure.snip1321 h4 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+figure.snip1321 i {
+    font-size: 32px;
+}
+
+figure.snip1321:after {
+    background-color: #000000d4;
+    position: absolute;
+    backdrop-filter: blur(5px);
     content: "";
     display: block;
     top: 0px;
@@ -578,39 +593,46 @@ figure.snip1321:after {
     left: 0px;
     right: 0px;
     bottom: 0px;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  -webkit-transform: rotateX(-90deg);
-  transform: rotateX(-90deg);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  opacity: 0;
-}
-figure.snip1321 a {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  z-index: 1;
-}
-figure.snip1321:hover figcaption,
-figure.snip1321.hover figcaption {
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
-figure.snip1321:hover:after,
-figure.snip1321.hover:after {
-  -webkit-transform: rotateX(0);
-  transform: rotateX(0);
-  opacity: 0.9;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    opacity: 0.9;
 }
 
-.imghold{
+figure.snip1321 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+figure.snip1321:hover figcaption h4, figure.snip1321.hover figcaption h4 {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: 0;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+figure.snip1321:hover figcaption h2, figure.snip1321.hover figcaption h2 {
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+    opacity: 0;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+figure.snip1321:hover:after, figure.snip1321.hover:after {
+    /* -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg); */
+    /* width: 10px; */
+    opacity: 0;
+    -webkit-transition-delay: .6s;
+    transition-delay: .6s;
+}
+
+.imghold {
     height: 300px;
     background-size: cover;
     position: relative;
@@ -619,8 +641,6 @@ figure.snip1321.hover:after {
     background-position: center;
     background-repeat: no-repeat;
 }
-
-
 
 /* svg try */
 
@@ -632,28 +652,59 @@ figure.snip1321.hover:after {
     width: 240px;
     height: 240px;
     margin-top: -116px;
-  }
+}
 
+/* contactpage */
 
-  /* contactpage */
-
-  .contactme{
+.contactme {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #000000;
-    background-image: linear-gradient(191deg, #000000 0%, #2c2b2bb3 96%);
-    height: 80vh;
-  }
- .iconheld{
-     display: inline;
- }
+}
 
- .svg-icon{
-     padding: 1px;
-     margin: 15px 30px;
- }
- .iconheld a{
-     color: white;
-     display: inline-block;
- }
- .iconheld a:hover{outline: none;}
+.iconheld {
+    display: inline;
+}
+
+.svg-icon {
+    padding: 1px;
+    margin: 15px 30px;
+}
+
+.iconheld a {
+    color: white;
+    display: inline-block;
+}
+
+.iconheld a:hover {
+    outline: none;
+}
+
+/* form */
+
+.contform {
+    margin: 30px auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.inputs {
+    margin: 5px auto;
+    padding: 13px 10px 13px 25px;
+    border-radius: 50px;
+    border: none;
+    background-color: #9595951c;
+    min-width: 300px;
+    color: white;
+}
+
+.inputs:focus {
+    outline: none;
+}
+
+.contform textarea {
+    border-radius: 10px 10px 25px 25px;
+}
+
+.contform .cvdown {
+    margin-top: 5px;
+}

@@ -87,7 +87,7 @@
     </div>
   </div>
 
-
+  <div class="wholesec">
   <!-- About me -->
   <div class="bgblack">
 
@@ -355,7 +355,7 @@
 
   <div class="contactme">
     <div class="sechead">contact me</div>
-    <div class="container-fluid">
+    <div class="container">
       <div class="row" style="text-align: center;">
         <div class="col-sm-4">
           <div id="socialhold" class="iconheld">
@@ -431,8 +431,25 @@
 
         </div>
       </div>
+      <!-- form -->
+
+      <div class="contform">
+        <form action="">
+          <input type="email" name="" id="" class="inputs" placeholder="Email">
+          <br>
+          <textarea name="" id=""  class="inputs" rows="3" placeholder="message"></textarea>
+          <div class="cvdown">Send</div>
+        </form>
+      </div>
+
     </div>
   </div>
+
+  </div>
+
+
+
+
 
 
 
@@ -458,7 +475,6 @@
     path.getBoundingClientRect();
     window.addEventListener("scroll", function (e) {
       var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-
       // Length to offset the dashes
       var drawLength = pathLength * scrollPercentage * 7;
 
