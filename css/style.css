@@ -8,6 +8,10 @@ body {
     .navbar .show {
         background-color: transparent !important;
     }
+    .langu{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media only screen and (max-width: 544px) {
@@ -461,7 +465,7 @@ nav {
     display: flex;
     justify-content: center;
     margin: 20px auto 0px auto;
-    max-width: 80%;
+    /* max-width: 80%; */
 }
 
 .iconn svg {
@@ -477,6 +481,9 @@ nav {
 
 .iconn:hover path {
     fill: #e8cb00 !important;
+}
+.iconn:hover img {
+    color: #e8cb00 !important;
 }
 
 /* .iconn:hover svg{
