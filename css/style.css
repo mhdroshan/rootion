@@ -1,5 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 /* media  quries*/
@@ -8,7 +13,7 @@ body {
     .navbar .show {
         background-color: transparent !important;
     }
-    .langu{
+    .langu {
         padding-left: 0;
         padding-right: 0;
     }
@@ -55,6 +60,10 @@ body {
     }
     .nav-link {
         padding: 0px !important;
+    }
+    nav.navbar ul li a:hover:after{
+        width: 20% !important;
+
     }
     /* .profimage{
     background-attachment: fixed !important;
@@ -153,6 +162,40 @@ body {
 .collapse {
     justify-content: center;
 }
+
+/* nav hover */
+
+nav.navbar ul li a
+{
+  position: relative;
+}
+nav.navbar ul li a:after
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.navbar ul li a:hover:after {
+  width: 100%;
+  transform: translateY(-10px);
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+
+
+
+
 
 nav {
     z-index: 10;
@@ -257,6 +300,8 @@ nav {
     margin: 8px 30px;
     font-weight: 500;
     font-size: 14px;
+    z-index: 11;
+    cursor: pointer;
     letter-spacing: 1px;
 }
 
@@ -364,7 +409,7 @@ nav {
     color: white;
     font-size: 14px;
     background: #e8cb00;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
 }
 
 .cvdown:hover {
@@ -482,9 +527,7 @@ nav {
 .iconn:hover path {
     fill: #e8cb00 !important;
 }
-.iconn:hover img {
-    color: #e8cb00 !important;
-}
+
 
 /* .iconn:hover svg{
     transform: scale(1.07);
@@ -535,6 +578,7 @@ nav {
 .propage {
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-top: 4%;
 }
 
 figure.snip1321 {
@@ -626,8 +670,8 @@ figure.snip1321:hover figcaption h2, figure.snip1321.hover figcaption h2 {
     -webkit-transform: translateX(50%);
     transform: translateX(50%);
     opacity: 0;
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
 }
 
 figure.snip1321:hover:after, figure.snip1321.hover:after {
@@ -663,7 +707,22 @@ figure.snip1321:hover:after, figure.snip1321.hover:after {
 
 /* contactpage */
 
+.waveinn {
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+    font-weight: 900;
+    height: fit-content;
+    font-size: 24vw;
+    padding: 1px;
+    -webkit-text-stroke: white .5px;
+    opacity: 0.15;
+    color: #29282800;
+}
+
 .contactme {
+    position: relative;
+    margin-top: 4%;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -675,6 +734,8 @@ figure.snip1321:hover:after, figure.snip1321.hover:after {
 .svg-icon {
     padding: 1px;
     margin: 15px 30px;
+    transition: .15s ease-in-out;
+    transition-delay: .2s;
 }
 
 .iconheld a {
@@ -685,11 +746,26 @@ figure.snip1321:hover:after, figure.snip1321.hover:after {
 .iconheld a:hover {
     outline: none;
 }
+.iconheld :hover path {
+    fill: #e8cb00 !important;
+    /* transform: scale(1.06);
+    transform-origin: center; */
+}
+.iconheld :hover svg {
+    /* fill: #e8cb00 !important; */
+    transform: scale(1.07);
+    transform-origin: center;
+}
+
+.iconheld svg path {
+    transition: .2s ease-in-out;
+}
+
 
 /* form */
 
 .contform {
-    margin: 30px auto;
+    margin: 93px auto 30px auto;
     text-align: center;
     padding: 10px;
 }
@@ -697,7 +773,7 @@ figure.snip1321:hover:after, figure.snip1321.hover:after {
 .inputs {
     margin: 5px auto;
     padding: 13px 10px 13px 25px;
-    border-radius: 50px;
+    border-radius: 10px;
     border: none;
     background-color: #9595951c;
     min-width: 300px;
@@ -709,7 +785,7 @@ figure.snip1321:hover:after, figure.snip1321.hover:after {
 }
 
 .contform textarea {
-    border-radius: 10px 10px 25px 25px;
+    border-radius: 10px 10px 20px 20px;
 }
 
 .contform .cvdown {
