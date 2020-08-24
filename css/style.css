@@ -1,10 +1,9 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    
 }
 
 /* media  quries*/
@@ -61,9 +60,8 @@ body {
     .nav-link {
         padding: 0px !important;
     }
-    nav.navbar ul li a:hover:after{
+    nav.navbar ul li a:hover:after {
         width: 20% !important;
-
     }
     /* .profimage{
     background-attachment: fixed !important;
@@ -165,37 +163,31 @@ body {
 
 /* nav hover */
 
-nav.navbar ul li a
-{
-  position: relative;
+nav.navbar ul li a {
+    position: relative;
 }
-nav.navbar ul li a:after
-{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #aaa;
-  height: 1px;
+
+nav.navbar ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
 }
+
 nav.navbar ul li a:hover:after {
-  width: 100%;
-  transform: translateY(-10px);
-}
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-  transition: all .5s;
+    width: 100%;
+    transform: translateY(-10px);
 }
 
-
-
-
-
+nav ul li a, nav ul li a:after, nav ul li a:before {
+    transition: all .5s;
+}
 
 nav {
     z-index: 10;
@@ -528,7 +520,6 @@ nav {
     fill: #e8cb00 !important;
 }
 
-
 /* .iconn:hover svg{
     transform: scale(1.07);
     transform-origin: center;
@@ -746,11 +737,13 @@ figure.snip1321:hover:after, figure.snip1321.hover:after {
 .iconheld a:hover {
     outline: none;
 }
+
 .iconheld :hover path {
     fill: #e8cb00 !important;
     /* transform: scale(1.06);
     transform-origin: center; */
 }
+
 .iconheld :hover svg {
     /* fill: #e8cb00 !important; */
     transform: scale(1.07);
@@ -760,7 +753,6 @@ figure.snip1321:hover:after, figure.snip1321.hover:after {
 .iconheld svg path {
     transition: .2s ease-in-out;
 }
-
 
 /* form */
 
