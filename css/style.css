@@ -423,7 +423,7 @@ nav {
 
 .wholesec {
     background-color: #000000;
-    background-image: linear-gradient(191deg, #000000 0%, #2c2b2bb3 96%);
+    background-image: linear-gradient(191deg, #0b0b0b 45%, #2c2b2ba3 90%);
 }
 
 /* about me */
@@ -452,6 +452,8 @@ nav {
 .detailsonme {
     display: flex;
     margin: 10px auto;
+    padding: 3px 10px;
+    justify-content: space-between;
 }
 
 .detailsonme p {
@@ -464,13 +466,13 @@ nav {
 }
 
 .perdp {
-    background-image: url(../src/profile.png);
+    background-image: url(../src/profile1.png);
     width: 200px;
     position: relative;
     height: 200px;
     border-radius: 70%;
     background-size: cover;
-    background-position: top;
+    background-position: center;
     margin: auto;
 }
 
