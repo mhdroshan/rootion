@@ -399,9 +399,17 @@ nav {
     cursor: pointer;
     border-radius: 50px;
     color: white;
+    position: relative;
     font-size: 14px;
     background: #e8cb00;
     transition: 0.2s ease;
+}
+.cvdown a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .cvdown:hover {
@@ -471,8 +479,8 @@ nav {
     position: relative;
     height: 200px;
     border-radius: 70%;
-    background-size: cover;
-    background-position: center;
+    background-size: 105%;
+    background-position: center top;
     margin: auto;
 }
 
