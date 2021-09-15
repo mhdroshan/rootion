@@ -22,11 +22,11 @@ body {
   .jumbrot h1 {
     
     font-size: 46px !important;
-
     padding-left: 10px;
     margin-left: -10px;
     background-color: #0c0c0c75;
     border-radius: 5px;
+    margin-right: 20px;
   }
   .jumbrot h5 {
     font-size: 16.5px;
