@@ -722,6 +722,7 @@ figure.snip1321.hover:after {
   background-size: cover;
   position: relative;
   width: 100%;
+  border-radius: 5px;
   margin: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -825,4 +826,11 @@ figure.snip1321.hover:after {
 
 .contform .cvdown {
   margin-top: 5px;
+}
+
+.someofem{
+  text-align: center;
+  margin-top: -55px;
+  margin-bottom: 50px;
+  color: #c2c2c2;
 }

@@ -367,6 +367,7 @@
       <!-- projects page -->
       <div id="projectspage" class="propage">
         <div class="sechead">my works</div>
+        <p class="someofem">(some of em)</p>
 
         <div class="container">
           <div class="row">
@@ -739,12 +740,17 @@
       });
     </script>
     <script>
+      // function sendMail() {}
       function sendMail() {
+        var email = "mhdroshannbr@gmail.com?";
         var yourMessage = document.getElementById("messagebox").value;
+        var mailto_link = "mailto:" + email + "&body=" + yourMessage;
+
         if (yourMessage == "") {
           alert("say something..");
         } else {
-          document.location.href = "mailto:mhdroshannbr@gmail.com";
+          win = window.location = mailto_link;
+          if (win && win.open && !win.closed) win.close();
         }
       }
     </script>
