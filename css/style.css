@@ -450,7 +450,8 @@ nav {
 }
 
 .boldd {
-  font-weight: 800;
+  font-weight: 600;
+  letter-spacing: .5px;
 }
 
 .perdp {
@@ -736,6 +737,7 @@ figure.snip1321.hover:after {
 .iconheld a {
   color: white;
   display: inline-block;
+  margin-bottom: 30px;
 }
 
 .iconheld a:hover {
