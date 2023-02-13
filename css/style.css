@@ -819,6 +819,9 @@ figure.snip1321.hover:after {
   .mobilHerBG {
     background: #2a2a2a78;
   }
+  .hireme{
+    box-shadow: none;
+  }
   .jumbrot p{
     color: #fff;
   }
