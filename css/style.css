@@ -8,71 +8,7 @@ body {
 
 /* media  quries*/
 
-@media only screen and (min-width: 992px) {
-  .navbar .show {
-    background-color: transparent !important;
-  }
-  .langu {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
 
-@media only screen and (max-width: 544px) {
-  .jumbrot h1 {
-    
-    font-size: 46px !important;
-    padding-left: 10px;
-    margin-left: -10px;
-    background-color: #0e0e0e45;
-    border-radius: 5px;
-    margin-right: 11vw;
-  }
-  .jumbrot h5 {
-    font-size: 16.5px;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .langtitle {
-    font-size: 13px !important;
-  }
-}
-
-@media only screen and (max-width: 770px) {
-  .topdetail {
-    font-size: 23px !important;
-  }
-}
-
-@media only screen and (max-width: 520px) {
-  .topdetail {
-    font-size: 18px !important;
-  }
-}
-
-/* @media only screen and (max-width: 442px) {
-    .jumbrot p{
-    color: white!important;
-    }
-    
-} */
-
-@media only screen and (max-width: 992px) {
-  .navbar .show .nav-link {
-    color: black !important;
-    transition: 0.3s ease;
-  }
-  .nav-link {
-    padding: 0px !important;
-  }
-  nav.navbar ul li a:hover:after {
-    width: 20% !important;
-  }
-  /* .profimage{
-    background-attachment: fixed !important;
-} */
-}
 
 /* scroller */
 
@@ -318,7 +254,7 @@ nav {
 .nav-item {
   margin: 8px 30px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   z-index: 11;
   cursor: pointer;
   letter-spacing: 1px;
@@ -380,12 +316,19 @@ nav {
 /* jumbrotron */
 
 .jumbrot {
-  margin-left: 12vw;
-  margin-top: 160px;
+  margin-left: 7vw;
+  margin-top: 20vh;
 }
 
 .jumbrot p {
   margin: 0;
+  color: #6f6f6f;
+  letter-spacing: .5px;
+}
+.jumbrot h5 {
+  letter-spacing: .5px;
+    color: #282828;
+    font-weight: 300;
 }
 
 .jumbrot h1 {
@@ -401,11 +344,15 @@ nav {
   text-align: center;
   border-radius: 50px;
   position: absolute;
-  color: white;
+  color: #414141;
   margin-top: 10px;
-  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 20px;
   background: #e8cb00;
   transition: 0.3s ease;
+  box-shadow: 0 3px 6px rgb(234 233 233 / 16%), 0 3px 9px rgb(184 184 184 / 77%);
 }
 
 .hireme:focus {
@@ -420,14 +367,16 @@ nav {
 .cvdown {
   border: 1px solid #e8cb00;
   padding: 10px 25px;
-  width: 150px;
+  width: 165px;
   text-align: center;
   margin: 15px auto;
   cursor: pointer;
+  letter-spacing: .4px;
+  font-weight: 500;
   border-radius: 50px;
-  color: white;
+  color: #414141;
   position: relative;
-  font-size: 14px;
+  font-size: 15px;
   background: #e8cb00;
   transition: 0.2s ease;
 }
@@ -476,12 +425,16 @@ nav {
   font-size: 50px;
   font-weight: 800;
   margin: auto;
-  padding: 2vh 10px 7vh 10px;
-  color: #ffffffbf;
+  padding: 5vh 0 8vh 0;
+  color: #c2c2c2;
 }
 
 .abtdata {
   text-align: center;
+  font-weight: 200;
+  letter-spacing: .5px;
+  line-height: 25px;
+  color: #c9c9c9;
 }
 
 .detailsonme {
@@ -545,6 +498,7 @@ nav {
 .iconn svg {
   width: 50px;
   padding: 1px;
+  fill: #fff;
   height: 50px;
   transition: 0.3s ease-in-out;
 }
@@ -552,6 +506,7 @@ nav {
 .iconn {
   width: 100%;
   cursor: pointer;
+  min-width: 125px;
 }
 
 .iconn:hover path {
@@ -587,17 +542,20 @@ nav {
 
 .topdetail {
   text-align: center;
-  font-size: 25px;
+  font-size: 18px;
   margin-top: 55px;
-  font-weight: 500;
-  color: white;
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: #c2c2c2;
+  margin: 90px auto 40px auto;
+  text-transform: lowercase;
 }
 
 .topdetail::before,
 .topdetail::after {
   display: inline-block;
   content: "";
-  border-top: 0.05rem solid white;
+  border-top: 0.04rem solid #c2c2c2;
   width: 5%;
   margin: 0 1rem;
   transform: translateY(-6px);
@@ -608,7 +566,7 @@ nav {
 .propage {
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-top: 4%;
+  margin-top: 8%;
 }
 
 figure.snip1321 {
@@ -650,14 +608,16 @@ figure.snip1321 h4 {
 }
 
 figure.snip1321 h2 {
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 200;
+  font-size: 16px;
 }
 
 figure.snip1321 h4 {
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
   font-size: 22px;
+  padding-bottom: 10px;
+  letter-spacing: 1.5px;
 }
 
 figure.snip1321 i {
@@ -757,7 +717,7 @@ figure.snip1321.hover:after {
 
 .contactme {
   position: relative;
-  margin-top: 4%;
+  margin-top: 6%;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -790,7 +750,7 @@ figure.snip1321.hover:after {
 
 .iconheld :hover svg {
   /* fill: #e8cb00 !important; */
-  transform: scale(1.07);
+  transform: scale(1.2);
   transform-origin: center;
 }
 
@@ -833,4 +793,88 @@ figure.snip1321.hover:after {
   margin-top: -55px;
   margin-bottom: 50px;
   color: #c2c2c2;
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.mobilHerBG{
+  Z-index: 30;
+    padding: 0;
+    padding-top: 30vh;
+    margin: 0 !important;
+    background: #ffffff2b;
+}
+@media only screen and (min-width: 992px) {
+
+  .navbar .show {
+    background-color: transparent !important;
+  }
+  .langu {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 544px) {
+  .mobilHerBG {
+    background: #2a2a2a78;
+  }
+  .jumbrot p{
+    color: #fff;
+  }
+  .jumbrot h1 {
+    
+    font-size: 46px !important;
+    padding-left: 10px;
+    margin-left: -10px;
+    /* background-color: #0e0e0e45; */
+    border-radius: 5px;
+    margin-right: 11vw;
+  }
+  .jumbrot h5 {
+    font-size: 16.5px;
+    color: #fff;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .langtitle {
+    font-size: 13px !important;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .topdetail {
+    font-size: 23px !important;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .topdetail {
+    font-size: 18px !important;
+  }
+}
+
+/* @media only screen and (max-width: 442px) {
+    .jumbrot p{
+    color: white!important;
+    }
+    
+} */
+
+@media only screen and (max-width: 992px) {
+  .navbar .show .nav-link {
+    color: black !important;
+    transition: 0.3s ease;
+  }
+  .nav-link {
+    padding: 0px !important;
+  }
+  nav.navbar ul li a:hover:after {
+    width: 20% !important;
+  }
+  /* .profimage{
+    background-attachment: fixed !important;
+} */
 }
