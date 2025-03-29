@@ -883,3 +883,86 @@ figure.snip1321.hover:after {
     background-attachment: fixed !important;
 } */
 }
+#view-more-button{
+  margin: auto;
+  display: block;
+  background: transparent;
+  appearance: none;
+  border: none;
+  color: #c2c2c2;
+  margin-top: 33px;
+  padding: 10px 25px;
+  width: 165px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: .4px;
+  font-weight: 500;
+  position: relative;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+#view-more-button:focus{
+  outline: none;
+}
+#view-more-button span svg{
+  transition: 0.2s ease;
+}
+#view-more-button.view-less span svg{
+  transform: rotate(180deg);
+}
+#GITHUBPROJECTS{
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 30px;
+  height: 322px;
+  overflow: auto;
+}
+#GITHUBPROJECTS .project-holder{
+  min-width: 150px;
+  width: 279px;
+  max-height: 133px;
+  overflow: auto;
+  margin: 20px auto;
+}
+#GITHUBPROJECTS::-webkit-scrollbar {
+  width: 6px; /* Adjust the scrollbar width */
+}
+
+#GITHUBPROJECTS::-webkit-scrollbar-track {
+  background: transparent; /* Track color */
+  border-radius: 5px;
+}
+
+#GITHUBPROJECTS::-webkit-scrollbar-thumb {
+  background: #c2c2c2; /* Thumb color */
+  border-radius: 5px;
+}
+
+#GITHUBPROJECTS::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Thumb color on hover */
+}
+#GITHUBPROJECTS .project-holder h3{
+  margin-bottom: 0;
+}
+#GITHUBPROJECTS .project-holder h3 a{
+  font-size: 18px;
+  color: #e8cb03a3;
+}
+#GITHUBPROJECTS .project-holder h3 a:hover{
+  text-decoration: none;
+  color: #e8cb03;
+
+}
+#GITHUBPROJECTS .project-holder h3 a span{
+  padding-right: 5px;
+}
+#GITHUBPROJECTS .project-holder h3 a span svg{
+  height: 35px;
+  width: 24px;
+  margin-bottom: 4px;
+}
+#GITHUBPROJECTS .project-holder p{
+  color: #c2c2c285;
+  font-size: 13px;
+  padding-left: 27px;
+}

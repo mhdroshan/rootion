@@ -159,7 +159,7 @@
                   </div>
                   <div class="detailsonme">
                     <span class="boldd">Age:&nbsp;</span>
-                    <p>26</p>
+                    <p class="my-age">26</p>
                   </div>
                   <div class="detailsonme">
                     <span class="boldd">Qualification:&nbsp;</span>
@@ -254,6 +254,34 @@
 
         <div class="container">
           <div class="row">
+          <div class="col-sm-6">
+              <figure class="snip1321">
+                <div
+                  class="imghold"
+                  style="background-image: url(./src//cairosketches.png)"
+                ></div>
+                <figcaption>
+                  <h4>Cairo sketches</h4>
+                  <h2>A website for Interior & architechture firm</h2>
+                </figcaption>
+                <a href="https://www.cairosketches.com" target="_blank"></a>
+              </figure>
+            </div>
+            <div class="col-sm-6">
+              <figure class="snip1321">
+                <div
+                  class="imghold"
+                  style="background-image: url(./src//revotrips.png)"
+                ></div>
+                <figcaption>
+                  <h4>Revo trips</h4>
+                  <h2>A website for tourism firm</h2>
+                </figcaption>
+                <a href="https://www.revotrips.com/" target="_blank"></a>
+              </figure>
+            </div>
+
+            
             <div class="col-sm-6">
               <figure class="snip1321">
                 <div
@@ -264,7 +292,7 @@
                   <h4>Civil solver</h4>
                   <h2>A tool for civil engineers (JavaScript)</h2>
                 </figcaption>
-                <a href="https://mhdroshan.github.io/Civil-solver/"></a>
+                <a href="https://mhdroshan.github.io/Civil-solver/" target="_blank"></a>
               </figure>
             </div>
             <div class="col-sm-6">
@@ -277,7 +305,7 @@
                   <h4>Dstaycations</h4>
                   <h2>Kochi,Kerala (Wordpress)</h2>
                 </figcaption>
-                <a href="https://dstaycations.com"></a>
+                <a href="https://dstaycations.com" target="_blank"></a>
               </figure>
             </div>
           </div>
@@ -292,7 +320,7 @@
                   <h4>UZACC</h4>
                   <h2>Accounting Software (PHP Laravel)</h2>
                 </figcaption>
-                <a href="https://uzacc2.brandingsparrow.com"></a>
+                <a href="https://uzacc2.brandingsparrow.com" target="_blank"></a>
               </figure>
             </div>
             <div class="col-sm-6">
@@ -305,12 +333,35 @@
                   <h4>reighnier</h4>
                   <h2>Kochi, Kerala (Html)</h2>
                 </figcaption>
-                <a href="https://www.reighnier.com/"></a>
+                <a href="https://www.reighnier.com/" target="_blank"></a>
               </figure>
             </div>
           </div>
         </div>
       </div>
+      <div class="view-more-container">
+        <button id="view-more-button" onclick="toggleProjects()">View More
+          <span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c2c2c2"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></span>
+        </button>
+        <div id="GITHUBPROJECTS" style="display: none;"></div>
+      </div>
+      <script>
+        function toggleProjects() {
+          var projectsDiv = document.getElementById("GITHUBPROJECTS");
+          var button = document.getElementById("view-more-button");
+          if (projectsDiv.style.display === "none") {
+            projectsDiv.style.display = "flex";
+            button.innerHtml = 'View Less <span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c2c2c2"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></span>';
+            button.classList.add("view-less");
+          } else {
+            projectsDiv.style.display = "none";
+            button.innerHtml = 'View More <span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c2c2c2"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></span>';
+            button.classList.remove("view-less");
+          }
+        }
+      </script>
+      <!-- MY OTHER GITHUB PROJECTS -->
+
 
       <!-- contact page -->
 
@@ -637,6 +688,60 @@
         }
       }
     </script>
+    <script>
+    fetch('https://api.github.com/users/mhdroshan/repos')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        data.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+        const projectsContainer = document.getElementById('GITHUBPROJECTS');
+        data.forEach(repo => {
+          const projectElement = document.createElement('div');
+          projectElement.className = 'project-holder';
+          projectElement.innerHTML = `
+            <h3><a href="${repo.html_url}" target="_blank"><span><svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect id="Icons" x="0" y="-192" width="1280" height="800" style="fill:none;"></rect> <g id="Icons1" serif:id="Icons"> <g id="Strike"> </g> <g id="H1"> </g> <g id="H2"> </g> <g id="H3"> </g> <g id="list-ul"> </g> <g id="hamburger-1"> </g> <g id="hamburger-2"> </g> <g id="list-ol"> </g> <g id="list-task"> </g> <g id="trash"> </g> <g id="vertical-menu"> </g> <g id="horizontal-menu"> </g> <g id="sidebar-2"> </g> <g id="Pen"> </g> <g id="Pen1" serif:id="Pen"> </g> <g id="clock"> </g> <g id="external-link"> </g> <g id="hr"> </g> <g id="info"> </g> <g id="warning"> </g> <g id="plus-circle"> </g> <g id="minus-circle"> </g> <g id="vue"> </g> <g id="cog"> </g> <path id="github" d="M32.029,8.345c-13.27,0 -24.029,10.759 -24.029,24.033c0,10.617 6.885,19.624 16.435,22.803c1.202,0.22 1.64,-0.522 1.64,-1.16c0,-0.569 -0.02,-2.081 -0.032,-4.086c-6.685,1.452 -8.095,-3.222 -8.095,-3.222c-1.093,-2.775 -2.669,-3.514 -2.669,-3.514c-2.182,-1.492 0.165,-1.462 0.165,-1.462c2.412,0.171 3.681,2.477 3.681,2.477c2.144,3.672 5.625,2.611 6.994,1.997c0.219,-1.553 0.838,-2.612 1.526,-3.213c-5.336,-0.606 -10.947,-2.669 -10.947,-11.877c0,-2.623 0.937,-4.769 2.474,-6.449c-0.247,-0.608 -1.072,-3.051 0.235,-6.36c0,0 2.018,-0.646 6.609,2.464c1.917,-0.533 3.973,-0.8 6.016,-0.809c2.041,0.009 4.097,0.276 6.017,0.809c4.588,-3.11 6.602,-2.464 6.602,-2.464c1.311,3.309 0.486,5.752 0.239,6.36c1.54,1.68 2.471,3.826 2.471,6.449c0,9.232 -5.62,11.263 -10.974,11.858c0.864,0.742 1.632,2.208 1.632,4.451c0,3.212 -0.029,5.804 -0.029,6.591c0,0.644 0.432,1.392 1.652,1.157c9.542,-3.185 16.421,-12.186 16.421,-22.8c0,-13.274 -10.76,-24.033 -24.034,-24.033" style="fill:#c2c2c2;"></path> <g id="logo"> </g> <g id="radio-check"> </g> <g id="eye-slash"> </g> <g id="eye"> </g> <g id="toggle-off"> </g> <g id="shredder"> </g> <g id="spinner--loading--dots-" serif:id="spinner [loading, dots]"> </g> <g id="react"> </g> <g id="check-selected"> </g> <g id="turn-off"> </g> <g id="code-block"> </g> <g id="user"> </g> <g id="coffee-bean"> </g> <g id="coffee-beans"> <g id="coffee-bean1" serif:id="coffee-bean"> </g> </g> <g id="coffee-bean-filled"> </g> <g id="coffee-beans-filled"> <g id="coffee-bean2" serif:id="coffee-bean"> </g> </g> <g id="clipboard"> </g> <g id="clipboard-paste"> </g> <g id="clipboard-copy"> </g> <g id="Layer1"> </g> </g> </g></svg></span> ${repo.name}</a></h3>
+            <p>${repo.description || 'No description available'}</p>
+          `;
+          projectsContainer.appendChild(projectElement);
+        });
+      })
+      .catch(error => console.error('Error fetching repositories:', error));
+
+
+
+</script>
+<script>
+  function calculateAge(birthDate) {
+  const today = new Date();
+  const birth = new Date(birthDate);
+  let age = today.getFullYear() - birth.getFullYear();
+  const monthDiff = today.getMonth() - birth.getMonth();
+  const dayDiff = today.getDate() - birth.getDate();
+
+  // Adjust age if birthday hasn't occurred yet this year
+  if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+    age--;
+  }
+
+  return age;
+}
+
+// Your birthday: January 11, 1996
+const myAge = calculateAge('1996-01-11');
+
+// Append age to div with class "my-age"
+document.addEventListener('DOMContentLoaded', () => {
+  const ageDiv = document.querySelector('.my-age');
+  if (ageDiv) {
+    ageDiv.textContent = myAge;
+  }
+});
+
+</script>
     <!-- <script>
     $('.jumbrot').paroller();
 
